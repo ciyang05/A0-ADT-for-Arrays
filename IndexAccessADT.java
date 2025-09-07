@@ -6,7 +6,7 @@ interface IndexAccessADT {
      * @param num
      * returns element at accessed index
      */
-    void accessIndex(int num);
+    public void accessIndex(int num);
 
-    
+
 }
