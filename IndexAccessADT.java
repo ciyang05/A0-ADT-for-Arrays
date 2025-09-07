@@ -5,6 +5,7 @@ interface IndexAccessADT {
      * 
      * @param num
      * returns element at accessed index
+     * will throw an exception if specified index is out of bounds
      */
     public void accessIndex(int num);
 
@@ -13,6 +14,7 @@ interface IndexAccessADT {
      * 
      * @param num
      * access and change the element at specified index
+     * will throw an exception if the specified index is out of bounds
      */
     public void changeEle(int num);
     /**
