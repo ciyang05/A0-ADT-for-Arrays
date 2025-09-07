@@ -17,12 +17,15 @@ interface IndexAccessADT {
      * will throw an exception if the specified index is out of bounds
      */
     public void changeEle(int num);
+
+
     /**
     * @param num (position of the element)
     * add an element to the end of the array
     */
     public void addEle(int num);
 
+    
     /**
     * @param num (position of the element)
     * removes an element at a specified index
