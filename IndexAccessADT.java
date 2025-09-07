@@ -32,6 +32,16 @@ interface IndexAccessADT {
     */
     public void removeEle(int num);
 
+
+    /**
+     * @param num
+     */
+    public void sortSome(int num);
+
+    /**
+     * @param num
+     */
+    public void getSome(int num);
 }
 
 
