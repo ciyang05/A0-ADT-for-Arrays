@@ -9,4 +9,10 @@ interface IndexAccessADT {
     public void accessIndex(int num);
 
 
+    /**
+     * 
+     * @param num
+     * access and change the element at specified index
+     */
+    public void changeEle(int num);
 }
