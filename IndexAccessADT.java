@@ -2,6 +2,12 @@
 interface IndexAccessADT {
     
     /**
+     * @param num
+     */
+    public void getSome(int num);
+
+
+    /**
      * 
      * @param num
      * returns element at accessed index
@@ -19,17 +25,12 @@ interface IndexAccessADT {
     public void changeEle(int num);
 
 
-
-
     /**
      * @param num
      */
     public void sortSome(int num);
 
-    /**
-     * @param num
-     */
-    public void getSome(int num);
+
 }
 
 
