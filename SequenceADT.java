@@ -5,9 +5,9 @@ interface SequenceADT {
     
     
     /**
-     * accesses and returns the array
+     * accesses and returns the sequence
      */
-    public void getArray();
+    public void getSeq();
 
 
     /**
@@ -30,12 +30,21 @@ interface SequenceADT {
 
     /**
      * @param num
-     * sorts the array in whichever order
+     * sorts the sequence in whichever order
      * will throw an exception if the specified index is out of bounds
      */
-    public void sortArray(int num);
+    public void sortSeq(int num);
+
+
+    /**
+     * @param num
+     * allows you to add an element from another sequence by extending the sequence
+     * will throw an exception if element is added to an out of bounds index
+     */
+    public void extendSeq(int num);
 
 
 }
 
+ 
 
