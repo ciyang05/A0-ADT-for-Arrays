@@ -1,9 +1,13 @@
-/** interface to describe operations supported by built-in array */
+/**  
+ * Interface to describe operations supported by built-in array
+ * A hypothetical IndexAccess object would be created in a constructor. The constructor is not featured in the interface. 
+ * The object would be declared by defining the type the array will hold followed by its name. Then, it would be initialized by defining the size.
+*/
 interface IndexAccessADT {
     
+    
     /**
-     * access and return the array
-     * will throw an exception if the specified index is out of bounds
+     * accesses and returns the array
      */
     public void getArray();
 
@@ -28,8 +32,8 @@ interface IndexAccessADT {
 
     /**
      * @param num
-     * sorts the array in descending order
-     * will throw an exception if the specified index is put of bounds
+     * sorts the array in whichever order
+     * will throw an exception if the specified index is out of bounds
      */
     public void sortArray(int num);
 
@@ -44,35 +48,47 @@ interface IndexAccessADT {
 // We will use AssertEqual to check if the expected value aligns with the returned value. If the method returns with expected value, test case should pass. 
 
 // public void accessEle(int num) - method call w/expected exception
+// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
+// The method should return the element at the specific index. In this case, if the user wants to access the element at index 2, the method should return 'U'.
 // In this case, we will use AssertEqual again. However, if the specified index is out of bounds, the test will not pass.
 
-// ASK HALIE ABOUT THIS EXCEPTION WHAT IT WOULD BE CALLED?
-// public void access(int num) - method call w/expected exception when String doesn't align
+// public void accessEle(int num) - method call w/fail test
+// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
+// The method should return the element at the specific index. In this case, if the user wants to access the element at index 2, the method should return 'U'.
+// We will again use AssertEqual to check if the expected element aligns with the returned element. However, if the elements do not match, the test will fail.
 
 // public void changeEle(int num) - method call w/expected return value
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// We want to change the element at the 3rd index to an 'I'. The method should return the changed array as a String. 
-// We will again use AssertEqual to check if the expected String aligns with the returned String. If the method returns with expected value, test case should pass. 
+// We want to change the element at the 3rd index to an 'I'. The method will return the changed array. 
+// We will again use AssertEqual to check if the expected String aligns with the returned String. If the method returns with the expected value, test case should pass. 
 
 // public void changeEle(int num) - method call w/expected exception
+// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
+// We want to change the element at the 3rd index to an 'I'. The method will return the changed array.
 // In this case, we will use AssertEqual again. However, if the specified index is out of bounds, the test will not pass.
 
-// ASK HALIE ABOUT THIS EXCEPTION WHAT IT WOULD BE CALLED?
-// public void changeEle(int num) - method call w/expected exception when String doesn't align
+// public void changeEle(int num) - method call w/fail test
+// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
+// We want to change the element at the 3rd index to an 'I'. The method will return the changed array.
+// We will again use AssertEqual to check if the expected String aligns with the changed array as a String. If the two elements do not match, the test will fail.
 
 // public void sortArray(int num) - method call w/expected return value
 // The length of this array is 4. Each index holds an element (int). For instance, the array is 1 2 3 4. 
-// We want to sort the array in descending order. The method should return the changed array as a string.
-// We will use AssertEqual to check if the expected String (array turned to String) aligns with the returned String. If the method returns with expected value, test case should pass. 
+// We want to sort the array in descending order. The method will return the changed array.
+// We will use AssertEqual to check if the expected String (array turned to String) aligns with the returned String. If the two elements match, the test case will pass. 
 
-// ASK HALIE ABOUT THIS EXCEPTION WHAT IT WOULD BE CALLED?
-// public void sortArray(int num) - method call w/expected exception 
+// public void sortArray(int num) - method call w/fail test
+// The length of this array is 4. Each index holds an element (int). For instance, the array is 1 2 3 4. 
+// We want to sort the array in descending order. The method will return the changed array.
+// We will use AssertEqual to check if the expected String (array turned to String) aligns with the returned String. If the two elements do not match, the test will fail.
 
 // public void getArray() - method w/expected return value
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// The method should get/access the array. It should return the array. 
+// The method should get/access the array. The method will return the array. 
 // We will use AssertEqual to test the expected case and returned case. If the expected value aligns with the returned value (array), the test should pass. 
 
-// ASK HALIE ABOUT THIS EXCEPTION WHAT IT WOULD BE CALLED?
-// public void getArray - method call w/expected exception
+// public void getArray() - method call w/fail test
+// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
+// The method should get/access the array. The method will return the array. 
+// We will use AssertEqual to test the expected and returned case. If the expected value does not match with the returned value (array), the test will not pass.
 
