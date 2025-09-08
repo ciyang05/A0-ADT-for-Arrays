@@ -2,9 +2,8 @@
 interface IndexAccessADT {
     
     /**
-     * @param num
-     * access adn return the array
-     * will throw an exception if the specified index is put of bounds
+     * access and return the array
+     * will throw an exception if the specified index is out of bounds
      */
     public void getArray();
 
