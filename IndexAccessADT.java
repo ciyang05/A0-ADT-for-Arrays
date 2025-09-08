@@ -3,6 +3,8 @@ interface IndexAccessADT {
     
     /**
      * @param num
+     * access adn return the array
+     * will throw an exception if the specified index is put of bounds
      */
     public void getArray();
 
@@ -27,7 +29,8 @@ interface IndexAccessADT {
 
     /**
      * @param num
-     * 
+     * sorts the array in descending order
+     * will throw an exception if the specified index is put of bounds
      */
     public void sortArray(int num);
 
