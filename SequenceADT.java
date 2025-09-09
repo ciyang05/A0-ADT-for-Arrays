@@ -17,7 +17,7 @@ interface SequenceADT <T> {
 
    /**
     *
-    * @param num the index which the user is trying to access
+    * @param num the index for the element which the user is trying to access
     * returns element at accessed index
     * will throw an exception if specified index is out of bounds
     * @return the element the user is trying to access
@@ -29,7 +29,7 @@ interface SequenceADT <T> {
 
    /**
     *
-    * @param num the index the user is trying to change
+    * @param num the index for the element the user is trying to change
     * access and change the element at specified index
     * will throw an exception if the specified index is out of bounds
     * @return the element that the user changed

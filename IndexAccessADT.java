@@ -3,39 +3,42 @@
  * A hypothetical IndexAccess object would be created in a constructor. The constructor is not featured in the interface. 
  * The object would be declared by defining the type the array will hold followed by its name. Then, it would be initialized by defining the size.
 */
-interface IndexAccessADT {
+interface IndexAccessADT <T> {
     
     
     /**
      * accesses and returns the array
      */
-    public <T> T getArray();
+    public T getArray();
 
 
     /**
      * 
-     * @param num
+     * @param num index of element the user is attempting to access
      * returns element at accessed index
      * will throw an exception if specified index is out of bounds
+     * @return element which was accessed
      */
-    public <T> T accessEle(int num);
+    public T accessEle(int num);
 
 
     /**
      * 
-     * @param num
+     * @param num index of element the user is attempting to access
      * access and change the element at specified index
      * will throw an exception if the specified index is out of bounds
+     * @return element which was modified
      */
-    public <T> T changeEle(int num);
+    public T changeEle(int num);
 
 
     /**
-     * @param num
+     * @param num array that user is attempting to sort
      * sorts the array in whichever order
      * will throw an exception if the specified index is out of bounds
+     * @return sorted array
      */
-    public <T> T sortArray(int num);
+    public T sortArray(int num);
 
 
 }
