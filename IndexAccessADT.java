@@ -6,40 +6,35 @@
 interface IndexAccessADT <T> {
     
     
-    /**
-     * accesses and returns the array
-     * @return array 
-     */
-    public T getArray();
-
 
     /**
      * 
-     * @param num index of element the user is attempting to access
+     * @param index index of element the user is attempting to access
      * returns element at accessed index
      * will throw an exception if specified index is out of bounds
      * @return element which was accessed
      */
-    public T accessEle(int num);
-
+    public T getEle(int index);
 
     /**
      * 
-     * @param num index of element the user is attempting to access
-     * access and change the element at specified index
+     * @param index of element the user is attempting to modify
+     * * access and change the element at specified index
      * will throw an exception if the specified index is out of bounds
-     * @return changed array
+     * @return element which was modified
      */
-    public T changeEle(int num);
-
+    public T setEle(int index); 
 
     /**
-     * @param num array that user is attempting to sort
-     * sorts the array in whichever order
-     * will throw an exception if the specified index is out of bounds
-     * @return sorted array
+     * 
+     * @param arr array which user is passing in
+     * will throw an excpetion if array is null
+     * @return length of the array
      */
-    public T sortArray(int num);
+    public T lenArray(T[] arr);
+
+
+
 
 
 }
