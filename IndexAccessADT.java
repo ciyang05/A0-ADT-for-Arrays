@@ -19,7 +19,7 @@ interface IndexAccessADT <T> {
     /**
      * 
      * @param index of element the user is attempting to modify
-     * * access and change the element at specified index
+     * change the element at specified index
      * will throw an exception if the specified index is out of bounds
      * @return element which was modified
      */
