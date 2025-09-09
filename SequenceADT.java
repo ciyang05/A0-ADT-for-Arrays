@@ -9,6 +9,7 @@ interface SequenceADT <T> {
   
    /**
     * accesses and returns the sequence
+    @return sequence
     */
    public T getSeq();
 

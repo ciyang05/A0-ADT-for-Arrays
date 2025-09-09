@@ -8,6 +8,7 @@ interface IndexAccessADT <T> {
     
     /**
      * accesses and returns the array
+     * @return array 
      */
     public T getArray();
 
