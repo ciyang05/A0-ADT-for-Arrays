@@ -42,10 +42,9 @@ interface SequenceADT {
     /**
      * @param num
      * allows you to add an element from another sequence by extending the sequence
-     * will throw an exception if element is added to an out of bounds index
+     * will throw an exception if user attempts to add to an out of bounds index
      */
     public <T> T extendSeq(int num);
-
 
 }
 

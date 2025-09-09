@@ -15,5 +15,8 @@ Reflection on your experience with this assignment:
 - Chiashi Yang: 
 This assignment was definitely simpler than I thought it was going to be. Writing the JUnit tests in plain English helped me remember the process and terms. In addition, just focusing on the interface instead of writing the actual code was a great way to ease into the semester. I appreciated the reminders and flexibility with this assignment! My group and I were collaborative and worked out different parts of the assignment. I will say that I definitely need to study up on my Java, as I had trouble with some key terms and concepts. 
 
+- Kiara Singh:
+ This assignment was a good introduction to arrays! I found it a little challenging at first, but thinking through the interfaces helped me understand more about what an array is and the different properties of an array. Also, by writing out the JUnit tests it was a good review, especially with understanding more about exceptions and assertions. My group was very thoughtufl throughout the process and TA hours and office hours were very helpful!
+
 - Victoria Reyes:
 This assignment was confusing at first, but with help from my teammates we understood the instructions better. I expected this assignment to have more "structured" instructions, but I now better understand that we are focsing more on the designing of the programming and less about how we do it. Finally, I truly believe I need to review Java concepts adn theories to refesh my memory as I struggled to remember the knowledge I gained last semester.
