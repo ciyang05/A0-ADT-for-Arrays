@@ -11,7 +11,7 @@ your work, please indicate the status of each item
 
 Assignment Points:
 
-_____ 1 pt: Submission includes readme.txt
+___YES__ 1 pt: Submission includes readme.txt
 
 __YES___ 1 pt: IndexAccess class includes Javadoc describing its purpose
 
@@ -27,9 +27,9 @@ _YES____ 1 pt: Tests cover all IndexAccess methods
 
 __YES__ 1 pt: Tests check all exceptional cases
 
-_____ 1 pt: SequenceADT includes methods with call signatures of various types
+_YES____ 1 pt: SequenceADT includes methods with call signatures of various types
 
-_____ 1 pt: SequenceADT class and methods all have Javadoc describing their purpose
+__YES___ 1 pt: SequenceADT class and methods all have Javadoc describing their purpose
 
 
 Kudos:
