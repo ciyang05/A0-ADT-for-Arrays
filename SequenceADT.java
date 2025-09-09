@@ -1,15 +1,15 @@
-public /**
+/**
 * interface to describe operations to keep track of sequences of elements
 * A hypothetical sequence object would be created in a constructor. The constructor is not featured in the interface.
 * In this case, a seqeunce of elements can be organized by using an array.
 * The object would be declared by defining the type the array will hold followed by its name. Then, it would be initialized by defining the size.
 */
-interface SequenceADT <T> {
+public interface SequenceADT <T> {
   
   
    /**
     * accesses and returns the sequence
-    @return sequence
+    * @return sequence
     */
    public T getSeq();
 
