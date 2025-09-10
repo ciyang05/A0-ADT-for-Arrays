@@ -19,7 +19,7 @@ interface IndexAccessADT <T> {
     /**
      * 
      * @param index of element the user is attempting to modify
-     * change the element at specified index
+     * change/set the element at specified index
      * will throw an exception if the specified index is out of bounds
      * @return element which was modified
      */
@@ -28,7 +28,6 @@ interface IndexAccessADT <T> {
     /**
      * 
      * @param arr array which user is passing in
-     * will throw an excpetion if array is null
      * @return length of the array
      */
     public T lenArray(T[] arr);
@@ -41,53 +40,37 @@ interface IndexAccessADT <T> {
 
 // JUNIT TESTS
 
-// public T accessEle(int num) - method call w/expected return value
+// public T getEle(int index) - method call w/expected return value
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
 // The method should return the element at the specific index. In this case, if the user wants to access the element at index 2, the method should return 'U'.
-// We will use AssertEqual to check if the expected value aligns with the returned value. If the method returns with expected value, test case should pass. 
+// We will use AssertEqual to check if the expected value aligns with the returned value. The expected value of 'U' and return value of 'U' match, so the test case passes. 
 
-// public T accessEle(int num) - method call w/expected exception
+// public T getEle(int index) - method call w/expected exception
+// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
+// The method should return the element at the specific index. In this case, the user wants to access the element at index 5.
+// In this case, we will use AssertTrue to test if the requested index is less than the length of the array. However, because the 5th index is out of bounds (exception), the test will fail.
+
+// public T getEle(int index) - method call w/fail test
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
 // The method should return the element at the specific index. In this case, if the user wants to access the element at index 2, the method should return 'U'.
-// In this case, we will use AssertEqual again. However, if the specified index is out of bounds, the test will not pass.
+// We will again use AssertEqual to check if the expected element aligns with the returned element. However, the elements do not match (expected is 'U' and returned is 'B'), the test will fail.
 
-// public T accessEle(int num) - method call w/fail test
+// public T setEle(int index) - method call w/expected return value
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// The method should return the element at the specific index. In this case, if the user wants to access the element at index 2, the method should return 'U'.
-// We will again use AssertEqual to check if the expected element aligns with the returned element. However, if the elements do not match, the test will fail.
+// We want to change the element at the 3rd index to an 'I'. The method should return the changed array as B L U I S. 
+// We will again use AssertEqual to check if the expected array aligns with the returned array. The expected array of B L U I S and returned array matches, so the test case passes. 
 
-// public T changeEle(int num) - method call w/expected return value
+// public T setEle(int index) - method call w/expected exception
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// We want to change the element at the 3rd index to an 'I'. The method will return the changed array. 
-// We will again use AssertEqual to check if the expected String aligns with the returned String. If the method returns with the expected value, test case should pass. 
+// We want to store an element at the 5th index. 
+// In this case, we will use AssertTrue to test if the index requested is less than the length of the array. However, the 5th index is out of bounds, so the test fails. 
 
-// public T changeEle(int num) - method call w/expected exception
+// public T setEle(int index) - method call w/fail test
 // The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// We want to change the element at the 3rd index to an 'I'. The method will return the changed array.
-// In this case, we will use AssertEqual again. However, if the specified index is out of bounds, the test will not pass.
+// We want to change the element at the 3rd index to an 'I'. The method should return the changed array as B L U I S. 
+// We will use AssertEqual to check if the expected array aligns with the returned array. The expected array (B L U I S) and returned array (B L I E S) do not match, as you made a typo. The test fails.
 
-// public T changeEle(int num) - method call w/fail test
-// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// We want to change the element at the 3rd index to an 'I'. The method will return the changed array.
-// We will again use AssertEqual to check if the expected String aligns with the changed array as a String. If the two elements do not match, the test will fail.
-
-// public T sortArray(int num) - method call w/expected return value
-// The length of this array is 4. Each index holds an element (int). For instance, the array is 1 2 3 4. 
-// We want to sort the array in descending order. The method will return the changed array.
-// We will use AssertEqual to check if the expected String (array turned to String) aligns with the returned String. If the two elements match, the test case will pass. 
-
-// public T sortArray(int num) - method call w/fail test
-// The length of this array is 4. Each index holds an element (int). For instance, the array is 1 2 3 4. 
-// We want to sort the array in descending order. The method will return the changed array.
-// We will use AssertEqual to check if the expected String (array turned to String) aligns with the returned String. If the two elements do not match, the test will fail.
-
-// public T getArray() - method w/expected return value
-// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// The method should get/access the array. The method will return the array. 
-// We will use AssertEqual to test the expected case and returned case. If the expected value aligns with the returned value (array), the test should pass. 
-
-// public T getArray() - method call w/fail test
-// The length of this array is 5. Each index holds an element (char). For instance, the array is B L U E S. 
-// The method should get/access the array. The method will return the array. 
-// We will use AssertEqual to test the expected and returned case. If the expected value does not match with the returned value (array), the test will not pass.
-
+// public T lenArray(T[] arr) - method call w/expected return value
+// The length of this array is 4. Each index holds an element (int). The array contains the ints 1 2 3 4. 
+// We want to return the length of the array, which is 4. 
+// We will use AssertEqual to check if the expected length matches the returned length. The expected length is 4, and the returned length is 4, so the test passes.
